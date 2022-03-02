@@ -1,0 +1,1167 @@
+
+No compatibility mode selected!
+
+
+Circuit: * /home/radhadk260501/esim-workspace/mixed_circuit_mux/mixed_circuit_mux.cir
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v3: no DC value, transient time 0 value used
+Warning: v2: no DC value, transient time 0 value used
+Warning: v1: no DC value, transient time 0 value used
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+i0                                           0
+i1                                           0
+sel                                          0
+net-_r3-pad1_                                0
+y                                            0
+v3#branch                                    0
+v2#branch                                    0
+v1#branch                                    0
+a3#branch_1_0                                0
+
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+No. of Data Rows : 1000
+Error: argument out of range for db
+Error: argument out of range for db
+Error: argument out of range for db
+Error: argument out of range for db
+binary raw file "/home/radhadk260501/eSim-Workspace/mixed_circuit_mux/mixed_circuit_mux.raw"
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v3: no DC value, transient time 0 value used
+Warning: v2: no DC value, transient time 0 value used
+Warning: v1: no DC value, transient time 0 value used
+No. of Data Columns : 10     
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+i0                                           0
+i1                                           0
+sel                                          0
+net-_r3-pad1_                                0
+y                                            0
+v3#branch                                    0
+v2#branch                                    0
+v1#branch                                    0
+a3#branch_1_0                                0
+
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=1
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=0
+sel=1
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=1
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=1
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=0
+sel=0
+y=0
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=0
+sel=0
+y=0
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=1
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=1
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=1
+sel=0
+y=1
+=============radha_mux : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+i0=0
+i1=1
+sel=0
+y=1
+
+Inside foo after eval.....
+i0=0
+i1=0
+sel=0
+y=0
+
+No. of Data Rows : 1000
+
+Total analysis time (seconds) = 0.036292
+
+Total CPU time (seconds) = 0.073 
+
+Total DRAM available = 257855.305 MB.
+DRAM currently available = 111525.270 MB.
+Maximum ngspice program size =   89.105 MB.
+Current ngspice program size =   11.215 MB.
+
+Shared ngspice pages =    9.352 MB.
+Text (code) pages =    6.285 MB.
+Stack = 0 bytes.
+Library pages =    2.641 MB.
+
