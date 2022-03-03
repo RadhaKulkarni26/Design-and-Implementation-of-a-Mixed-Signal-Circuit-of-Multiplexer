@@ -1,8 +1,7 @@
 # DESIGN AND IMPLEMENTATION OF A MIXED SIGNAL CIRCUIT 2:1 MUX
 
-- The purpose of this project is to design a **Mixed Signal Circuit 2:1 MUX** using an Opensource EDA Tool called **eSim**, an **Makerchip** software.
-- To explore the project, you can git clone using the command: git clone https://github.com/RadhaKulkarni26/Design-and-Implementation-of-2-1-MUX-using-sky130-PDK.git
-
+- The purpose of this project is to design a **Mixed Signal Circuit of 2:1 MUX** using an Opensource EDA Tool called **eSim**, and **Makerchip** software.
+- To explore the project, you can git clone using the command: git clone https://github.com/RadhaKulkarni26/Design-and-Implementation-of-a-Mixed-Signal-Circuit-of-Multiplexer.git
 ## Table of Contents:
 
 1. INTRODUCTION
@@ -11,75 +10,62 @@
 4. INSTALLATION OF TOOLS
 5. CIRCUIT DESIGN
    1. REFERENCE CIRCUIT DIAGRAM
-   2. REFERENCE CIRCUIT WAVEFORM
+      - Digital Block Diagram
+      - Analog Block Diagram
+   3. REFERENCE CIRCUIT WAVEFORM
 6. IMPLEMENTATION
 7. REFERENCE
 
 ### 1. INTRODUCTION
 ***
-In this project, I am going to Design and Implement **2:1 Mux** using **CMOS** Technology and I will also implement it using **sky130nm** technology. Design and Implementation will be done using esim and ngspice software. **MUX** is a data selector which will give single output from several data inputs. Here we have implemented 2 input MUX which will give single output based on select line input. We can verify the output using Circuit Waveforms. This complete design and implementation is done using VLSI technology which has features such as high speed, low power, low cost, and small size.
+In this project, I am going to Design and Implement a **Mixed Signal Circuit of 2:1 Mux**. Design and Implementation will be done using **esim** and **Makerchip** software. Mixed signal circuits contain both **Digital and Analog blocks** of a given circuit. **MUX** is a data selector which will give single output from several data inputs. Here we have implemented 2 input MUX which will give single output based on select line input. As this is a mixed signal circuit we will have complete implementation from **HDL** code to **schematic** implementation and. We can **verify** the **output** using **Circuit Waveforms**. This complete design and implementation is done using VLSI technology which has features such as high speed, low power, low cost, and small size.
 
-### 2. INSTALLATION OF TOOLS
+### 2. WHAT ARE MIXED SIGNAL CIRCUITS?
+
+A **Mixed signal integrated circuit** is any integrated circuit that has **both** **analog circuits** and **digital circuits** on a single semiconductor die. A signal which continously varies with time is an **Analog Signal**. An analog signal can generally be represented as a function of time (f(t)).The signals which are basically generated from the nature are analog in nature. Similarly, signals which have discrete values are called Digital signals. These are represented in binary form (0 and 1). Mixed Signal Circuits contain both analog and digital signals. The below diagram shows basic block diagram of Mixed Signal Circuiits:
+
+![Mixed Circuit Block Diagram](https://user-images.githubusercontent.com/70748543/156620690-34b289cc-e1a2-4dab-a8d7-a816f5fa6d88.JPG)
+
+**For more information:** https://en.wikipedia.org/wiki/Mixed-signal_integrated_circuit
+
+### 3. WHAT IS VERILOG AND TL-VERILOG?
+
+- **VERILOG** or **Verify Logic** is an Hardware Description Language commonly used in VLSI Design to create electronic circuits.
+
+**For more information:** https://en.wikipedia.org/wiki/Verilog
+
+- **TL-Verilog** or **Transaction-Level Verilog** is an extension to SystemVerilog that supports a new design methodology, called transaction-level design
+
+**For more information:** https://www.redwoodeda.com/tl-verilog
+
+### 4. INSTALLATION OF TOOLS
 ***
 #### esim:
 esim is an open-source EDA tool used for circuit design and simulation. Using esim we can draw circuit using Kicad, generate netlist and simulate using Ngspice.
 
-For more information: <https://esim.fossee.in/home>
+**For more information:** <https://esim.fossee.in/home>
 
-#### Ngspice:
+The **Download link** for above eSim software is: <https://esim.fossee.in/downloads>
 
-ngspice is the open-source spice simulator for electric and electronic circuits. We can design circuits using JFET, MOSFET and passive elements like resistors, capacitors, etc.
+#### Makerchip:
+Makerchip provides free and instant access to the latest tools from your browser and from your desktop. This includes open-source tools and proprietary ones.
 
-For more information: <http://ngspice.sourceforge.net>
-
-#### Sky130nm PDK:
-
-The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility. 
-
-For more information: <https://www.layouteditor.org/schematiceditor/libraries/skywater>
-
-The Download links for above software are:
-
-#### esim: <https://esim.fossee.in/downloads>
-
-#### Ngspice: <https://sourceforge.net/projects/ngspice/files/>
-
-#### Sky130 pdk: <https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip>
-
-Follow these steps for Sky130 download and implementaion:
-
-1. Download sky130 from this link mentioned above and unzip it.
-1. Save the .cir.out file in the sky\_fd\_pr folder as .cir file.
-1. Open with notepad and add the path .lib "models/sky130.lib.spice" tt at the top.
-1. Replace with CMOSP, mos\_p with sky130\_fd\_pr\_pfet\_01v8 and CMOSN, mos\_n with  sky130\_fd\_pr\_nfet\_01v8.
-1. To replace inductor, capacitor, resistor do it this way, for Ex: L1 out gnd 1m by x1 out gnd mid 0 sky130\_fd\_pr\_\_ind\_03\_90.
-
-**Note**: For more details go to the cells folder in sky\_fd\_pr. 
-
-Open the specific component folder which you want to use. 
-
-Then open the test folder and check the SPICE file. 
-
-The SPICE file is an example of implementation of that component. 
-
-You will get to know how to use the component in your ckt.
-
-6. Now Run the circuit with ngspice.
-
-To Run the ckt using ngspice:
-
-1. Right click on .cir file.
-1. Click on Open With.
-1. Browse for the ngspice.
-1. If ngspice not present scroll down click on More Apps.
-1. Go to the FOSSEE folder search for Ngspice and Run it.
+**For more information:** <https://www.makerchip.com/>
 
 ### 3. CIRCUIT DESIGN
 ***
-**Multiplexer (MUX)** is a data selector which will send single input data at the output based on select line input. Here we have implemented a 2:1 MUX which has 2 inputs (**A** and **B**), 1 output (**Y**) and 1 select line (**S**). Output Y will be A or B based on 0 or 1 input at the select line (S). If the select line is “0” output Y will be A and if the select line is “1” then output Y will be B. 2:1 MUX using CMOS will be designed using 2 parts: PMOS (pull-up lattice) and NMOS (pull-down lattice). PMOS circuit is connected to supply voltage VDD and NMOS circuit is connected to ground GND. The equation for output Y will be Y=ASbar + BS. According to circuit design rules, ASbar and BS will be connected in parallel in PMOS lattice and it will be connected in series in NMOS lattice. We know that the output of CMOS is always inverted so we have to connect the CMOS inverter circuit at the output. We will implement this circuit design using sky130nm technology. In the Circuit Waveform, we will verify the above implementation using clock pulse. Output Y will have the same clock pulse sequence as A when S will be “0” and it will have the same clock pulse sequence as B when S will be “1”.
+Multiplexer (MUX) is a data selector which will send single input data at the output based on select line input. Here we have implemented a 2:1 MUX which has 2 inputs (A and 
+B), 1 output (Y) and 1 select line (S). Output Y will be A or B based on 0 or 1 input at the select line (S). If the select line is “0” output Y will be A and if the select line is “1” then output Y will be B. 2:1. The equation for output Y will be Y=ASbar + BS. The complete design is divided into two parts Digital Block and Analog Block. Here, we will be using Verilog Hardware Description Language for implementation. We will implement the code using Makerchip software and implement the Circuit schematic using esim software. We know that mixed signals contain both analog and digital blocks hence we need ADC and DAC blocks to convert the signals from analog to digital. Figure 1 shows the Digital Block of the circuit and Figure 2 shows the Circuit Schematic i.e., Analog Block of the circuit. In the Circuit Waveform, we will verify the above implementation using clock pulse. Output Y will have the same clock pulse sequence as A when S will be “0” and it will have the same clock pulse sequence as B when S will be “1”.
 
 #### 3.1 REFERENCE CIRCUIT DIAGRAM
-  ![reference circuit diagram](https://user-images.githubusercontent.com/70748543/153011605-bb606d89-6c5e-4095-ae4b-e7dd460a38a8.JPG)
+
+- **Digital Block Diagram:** 
+
+![new digital block](https://user-images.githubusercontent.com/70748543/156618869-ef3a2285-08f9-4b9a-bc1b-887f9dd0e329.jpeg)
+
+- **Analog Block Diagram:**
+
+ ![reference circuit diagram](https://user-images.githubusercontent.com/70748543/153011605-bb606d89-6c5e-4095-ae4b-e7dd460a38a8.JPG)
 
 
 #### 3.2 REFERENCE CIRCUIT WAVEFORM
@@ -88,118 +74,181 @@ To Run the ckt using ngspice:
 
 ### 4. IMPLEMENTATION
 ***
-The basic element of this designing a CMOS inverter for s and sbar inputs.
-The circuit diagram for cmos inverter will be as follows:
-![CMOS INVERTER](https://user-images.githubusercontent.com/70748543/153011045-ce2a91eb-e685-4f8b-9ff1-51a2837a1111.JPG)
+## Step-1:
 
-After designing cmos inverter for s and sbar we will design the complete circuit using our reference circuit diagram with PMOS logic above and NMOS logic below.
-After connecting the complete we will get a circuit like below:
-![Final_Circuit_Diagram](https://user-images.githubusercontent.com/70748543/152834286-af702037-bce7-4802-b420-7fb5da3d7411.JPG)
+The **verilog code** of 2:1 MUX is as follows:
+   
+   module radha_mux (input i0 , input i1 , input sel , output reg y);
+always @ (*)
+begin
+	if(sel)
+		y <= i0;
+	else 
+		y <= i1;
+end
+endmodule
+  
+Initially we add the verilog file to Makerchip and run the code to get the expected waveform. Makerchip will itself create a TVL file and run the code.
+  
+Below is the **.tvl** code which will be generated by Makerchip.
+  
+\TLV_version 1d: tl-x.org
 
-Label each and every component and port and check electrical rule checking and generate netlist file using spice and make changes in netlist to add sky130 models.
-**The netlist generated initially is as shown below:**
+\SV
+/* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/   /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/  
 
-\* C:\SPB\_Data\eSim-Workspace\Multiplexer\multiplexer.cir
+//Your Verilog/System Verilog Code Starts Here:
 
-\* EESchema Netlist Version 1.1 (Spice format) creation date: 2/7/2022 9:25:01 PM
+module radha_mux (input i0 , input i1 , input sel , output reg y);
 
-\* To exclude a component from the Spice Netlist add [Spice\_Netlist\_Enabled] user FIELD set to: N
+always @ (*)
 
-\* To reorder the component spice node sequence add [Spice\_Node\_Sequence] user FIELD and define sequence: 2,1,0
+begin
 
-\* Sheet Name: /
+if(sel)
 
-M2  Net-\_M2-Pad1\_ /vin\_1 /vdd /vdd mosfet\_p		
+y <= i0;
 
-M3  Net-\_M2-Pad1\_ Net-\_M1-Pad1\_ /vdd /vdd mosfet\_p		
+else 
 
-M4  Net-\_M2-Pad1\_ /vin\_2 Net-\_M12-Pad2\_ /vdd mosfet\_p		
+y <= i1;
 
-M5  Net-\_M2-Pad1\_ /select Net-\_M12-Pad2\_ /vdd mosfet\_p		
+end
 
-M8  Net-\_M12-Pad2\_ /vin\_1 Net-\_M10-Pad1\_ GND mosfet\_n		
+endmodule
 
-M9  Net-\_M12-Pad2\_ /vin\_2 Net-\_M11-Pad1\_ GND mosfet\_n		
+//Top Module Code Starts here:
 
-M10  Net-\_M10-Pad1\_ Net-\_M1-Pad1\_ GND GND mosfet\_n		
+module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, output logic passed, output logic failed);
 
-M11  Net-\_M11-Pad1\_ /select GND GND mosfet\_n		
+logic  i0;//input
 
-M1  Net-\_M1-Pad1\_ /select /vdd /vdd mosfet\_p		
+logic  i1;//input
 
-M7  Net-\_M1-Pad1\_ /select GND GND mosfet\_n		
+logic  sel;//input
 
-M6  /vout Net-\_M12-Pad2\_ /vdd /vdd mosfet\_p		
+logic  y;//output
 
-M12  /vout Net-\_M12-Pad2\_ GND GND mosfet\_n		
+//The $random() can be replaced if user wants to assign values
 
-U1  /vdd /select /vin\_1 /vin\_2 /vout PORT		
+assign i0 = $random();
 
-.end
+assign i1 = $random();
 
-**The netlist after making sky130 models syntax changes is as shown below:**
+assign sel = $random();
 
-\* c:\spb\_data\esim-workspace\multiplexer\multiplexer.cir
+radha_mux radha_mux(.i0(i0), .i1(i1), .sel(sel), .y(y));
 
-.lib "sky130\_fd\_pr/models/sky130.lib.spice" tt
+\TLV
 
-xM1  Net-\_M1-Pad1\_ select vdd vdd sky130\_fd\_pr\_\_pfet\_01v8		
+//Add \TLV here if desired                                     
 
-xM7  Net-\_M1-Pad1\_ select GND GND sky130\_fd\_pr\_\_nfet\_01v8		
+\SV
 
-xM6  vout Net-\_M12-Pad2\_ vdd vdd sky130\_fd\_pr\_\_pfet\_01v8		
+endmodule
+  
+  ![Makerchip window](https://user-images.githubusercontent.com/70748543/156612151-8583061c-da42-4f75-ad6d-c022424f9287.JPG)
+  
+  The below diagram shows output waveform on Makerchip window:
 
-xM12  vout Net-\_M12-Pad2\_ GND GND sky130\_fd\_pr\_\_nfet\_01v8		
+  ![makerchip](https://user-images.githubusercontent.com/70748543/156612256-e12d7d26-93e2-445f-b93e-25efba1e4808.JPG)
 
-xM2  Net-\_M2-Pad1\_ vin\_1 vdd vdd sky130\_fd\_pr\_\_pfet\_01v8		
+## Step-2 : 
+After debugging the verilog code we open the **NgVeri** tab and select **Add Verilog to NgSpice converter** to create the Mux model.
 
-xM4  Net-\_M12-Pad2\_ vin\_2 Net-\_M2-Pad1\_ vdd sky130\_fd\_pr\_\_pfet\_01v8		
+![Model Created Successfully](https://user-images.githubusercontent.com/70748543/156612412-2619224a-8ee7-4050-b253-9a662c7502a8.JPG)
 
-xM3  Net-\_M2-Pad1\_ Net-\_M1-Pad1\_ vdd vdd sky130\_fd\_pr\_\_pfet\_01v8		
+## Step-3 : 
 
-xM5  Net-\_M12-Pad2\_ select Net-\_M2-Pad1\_ vdd sky130\_fd\_pr\_\_pfet\_01v8		
+After successfully creating the model we create the schematic as shown in the below **schematic diagram**:
 
-xM8  Net-\_M12-Pad2\_ vin\_1 Net-\_M10-Pad1\_ GND sky130\_fd\_pr\_\_nfet\_01v8		
+![Final Circuit Diagram](https://user-images.githubusercontent.com/70748543/156612545-6603e363-6712-42af-b80c-e862e861b059.JPG)
 
-xM10  Net-\_M10-Pad1\_ Net-\_M1-Pad1\_ GND GND sky130\_fd\_pr\_\_nfet\_01v8		
+## Step-4 : 
 
-xM9  Net-\_M12-Pad2\_ vin\_2 Net-\_M11-Pad1\_ GND sky130\_fd\_pr\_\_nfet\_01v8		
+Create **netlist** and run kicad to ngspice converter. After giving the required timing parameters we will get a **.cir.out** file.
 
-xM11  Net-\_M11-Pad1\_ select GND GND sky130\_fd\_pr\_\_nfet\_01v8	
+*/home/radhadk260501/esim-workspace/mixed_circuit_mux/mixed_circuit_mux.cir
 
-Vdd vdd 0 3	
+*u4  net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ net-_u4-pad4_ radha_mux
 
-Vin\_1 vin\_1 0 pulse(0 3 0s 0s 0s 5us 10us)
+*u5  i0 i1 sel net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ adc_bridge_3
 
-Vin\_2 vin\_2 0 pulse(0 3 0s 0s 0s 2.5us 5us) 
+*u6  net-_u4-pad4_ net-_r3-pad1_ dac_bridge_1
 
-Vd0 select 0 pulse(3 0 0s 0s 0s 10us 20us) 
+v1  i0 gnd pulse(0 5 1m 1m 1m 5 10)
 
-.tran 0.1us 40us
+v2  i1 gnd pulse(0 5 1m 1m 1m 2.5 5)
+
+v3  sel gnd pulse(0 5 1m 1m 1m 10 20)
+
+*u1  i0 plot_db
+
+*u2  i1 plot_db
+
+r3  net-_r3-pad1_ y 1k
+
+c1  y gnd 1u
+
+*u7  y plot_db
+
+*u3  sel plot_db
+
+a1 [net-_u4-pad1_ ] [net-_u4-pad2_ ] [net-_u4-pad3_ ] [net-_u4-pad4_ ] u4
+
+a2 [i0 i1 sel ] [net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ ] u5
+
+a3 [net-_u4-pad4_ ] [net-_r3-pad1_ ] u6
+
+*Schematic Name:                             radha_mux, NgSpice Name: radha_mux
+
+.model u4 radha_mux(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+
+*Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
+
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+
+*Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+
+.tran 1e-00 40e-00 0e-00
+
+*Control Statements 
 
 .control
 
 run
 
-plot  V(select) +  5 V(vin\_2) + 10 V(vin\_1) + 15 V(vout) 
+print allv > plot_data_v.txt
+
+print alli > plot_data_i.txt
+
+plot db(i0)
+
+plot db(i1)
+
+plot db(y)
+
+plot db(sel)
 
 .endc
 
 .end
 
+## Step-5 : 
 
-**Note**: sky130\_fr\_pd file for sky130 model must be present on the same file as .cir.out.
+Now, we simulate the circuit using NgSpice to verify the logic of the circuit. 
 
+We will get **waveforms** as follows:
 
-**Truth Table for 2:1 mux using CMOS is as shown below**:
+![Final Waveform](https://user-images.githubusercontent.com/70748543/156618361-9c54b4d8-bfdc-45f9-8619-3bf7c09c200b.JPG)
+
+The below table shows the **Truth Table** of 2:1 MUX. We can verify the truth table with the waveform.
 
 ![TRUTH TABLE](https://user-images.githubusercontent.com/70748543/153012502-61603109-a4de-4e3c-87f8-8e0b7268358c.JPG)
 
-Now, run the .cir.out file using ngspice and we will get the circuit waveforms as follows:
-![Final_Circuit_Waveform](https://user-images.githubusercontent.com/70748543/152834359-f9defd90-2871-4304-93a6-e6b094bb7187.JPG)
-
-
-From the above waveform we can verify the truth table for 2:1 mux using CMOS. 
+In this way we Design and implement a Mixed Signal Circuit.
 
 ### 5. REFERENCES:
 ***
