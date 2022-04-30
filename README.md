@@ -52,11 +52,11 @@ Makerchip provides free and instant access to the latest tools from your browser
 
 **For more information:** <https://www.makerchip.com/>
 
-### 3. CIRCUIT DESIGN
+### 5. CIRCUIT DESIGN
 ***
 **Multiplexer (MUX)** is a data selector which will send **single input** data at the **output** based on **select line input**. Here we have implemented a 2:1 MUX which has **2 inputs** (A and B), **1 output** (Y) and **1 select line** (S). Output Y will be **A or B** based on **0 or 1** input at the select line (S). If the select line is **“0”** output Y will be **A** and if the select line is **“1”** then output Y will be **B**. The complete design is divided into two parts **Digital Block** and **Analog Block**. Here, we will be using **Verilog** Hardware Description Language for implementation. We will implement the **code** using **Makerchip** software and implement the Circuit **schematic** using **esim** software. We know that **mixed signals** contain **both** analog and digital blocks hence we need **ADC** and **DAC** blocks to convert the signals from analog to digital. Figure 1 shows the Digital Block of the circuit and Figure 2 shows the Circuit Schematic i.e., Analog Block of the circuit. In the Circuit Waveform, we will verify the above implementation using clock pulse. Output Y will have the same clock pulse sequence as A when S will be “0” and it will have the same clock pulse sequence as B when S will be “1”.
 
-#### 3.1 REFERENCE CIRCUIT DIAGRAM
+#### 5.1 REFERENCE CIRCUIT DIAGRAM
 
 - **Digital Block Diagram:** 
 
@@ -67,11 +67,11 @@ Makerchip provides free and instant access to the latest tools from your browser
  ![reference circuit diagram](https://user-images.githubusercontent.com/70748543/153011605-bb606d89-6c5e-4095-ae4b-e7dd460a38a8.JPG)
 
 
-#### 3.2 REFERENCE CIRCUIT WAVEFORM
+#### 5.2 REFERENCE CIRCUIT WAVEFORM
   ![reference circuit waveform](https://user-images.githubusercontent.com/70748543/153012012-14c1b291-9ef8-41dc-b98e-81b1410ff54e.JPG)
   
 
-### 4. IMPLEMENTATION
+### 6. IMPLEMENTATION
 ***
 ## Step-1:
 
@@ -249,7 +249,7 @@ The below table shows the **Truth Table** of 2:1 MUX. We can verify the truth ta
 
 In this way we Design and implement a Mixed Signal Circuit.
 
-### 5. REFERENCES:
+### 7. REFERENCES:
 ***
 [1] D. S. D. R. A. Rose V Anugraha. Design and performance analysis of 2:1 multiplexer using multiple logic families at 180nmtechnology.https://ieeexplore.ieee.org/abstract/document/8256918. 
 
